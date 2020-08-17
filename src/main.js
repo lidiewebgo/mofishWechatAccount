@@ -7,7 +7,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { NavBar,Icon,Tab, Tabs,List,PullRefresh } from 'vant';
 
+Vue.use(NavBar);
+Vue.use(Icon);
+Vue.use(Tab);
+Vue.use(Tabs);
+Vue.use(List);
+Vue.use(PullRefresh);
 // 设置 js中可以访问 $cdn
 import { $cdn } from '@/config'
 Vue.prototype.$cdn = $cdn
